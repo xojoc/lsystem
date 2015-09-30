@@ -5,6 +5,8 @@
 
  L-systems are comonly used to draw fractals for an explanation see:
 https://en.wikipedia.org/wiki/L-system
+
+ For some examples see http://xojoc.pw/justcode/lsystem-examples.html
 */
 package lsystem
 
@@ -13,6 +15,7 @@ import (
 	"github.com/xojoc/turtle"
 	"image/color"
 	"log"
+	"math"
 	"strconv"
 	"strings"
 )
@@ -34,9 +37,10 @@ type LSystem struct {
 //    rotate N - Change the direction of the next drawing operation by N degrees.
 //    move N - Move by N pixels without drawing.
 //    draw C W L - Draw a line with color C (in #rrggbbaa notation), width W and long L pixels
-func New(rules map[rune]string, operations map[rune]string) *LSystem {
+func New(rules map[rune]string, operations map[rune]string, angle float64) *LSystem {
 	l := &LSystem{}
 	l.t = turtle.New()
+	l.t.A = angle * math.Pi / 180.0
 	l.rules = rules
 	l.operations = operations
 	l.stack = [][3]float64{}
