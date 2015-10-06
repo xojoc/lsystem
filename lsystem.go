@@ -15,7 +15,6 @@ import (
 	"github.com/xojoc/turtle"
 	"image/color"
 	"log"
-	"math"
 	"strconv"
 	"strings"
 )
@@ -40,7 +39,7 @@ type LSystem struct {
 func New(rules map[rune]string, operations map[rune]string, angle float64) *LSystem {
 	l := &LSystem{}
 	l.t = turtle.New()
-	l.t.A = angle * math.Pi / 180.0
+	l.t.A = angle
 	l.rules = rules
 	l.operations = operations
 	l.stack = [][3]float64{}
