@@ -6,6 +6,7 @@ Install the library with
 ```
 go get -u github.com/xojoc/lsystem
 ```
+see [some examples](http://xojoc.pw/justcode/lsystem-examples.html)
 
 # Who?
 *lsystem* was written by Alexandru Cojocaru (http://xojoc.pw).
