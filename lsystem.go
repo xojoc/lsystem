@@ -1,7 +1,7 @@
-// This package was written by xojoc (http://xojoc.pw)
-// and is in the Public Domain do what you want with it.
+// Written by http://xojoc.pw. Public Domain.
 
-/*Package lsystem implements the L-system rewriting system.
+/*
+ Package lsystem implements the L-system rewriting system.
 
  L-systems are comonly used to draw fractals for an explanation see:
 https://en.wikipedia.org/wiki/L-system
