@@ -1,22 +1,23 @@
-// Written by http://xojoc.pw. Public Domain.
+// Written by https://xojoc.pw. Public Domain.
 
 /*
  Package lsystem implements the L-system rewriting system.
 
- L-systems are comonly used to draw fractals for an explanation see:
+ L-systems are comonly used to draw fractals. For an explanation see:
 https://en.wikipedia.org/wiki/L-system
 
- For some examples see http://xojoc.pw/justcode/lsystem-examples.html
+ For some examples see https://xojoc.pw/justcode/lsystem-examples.html
 */
 package lsystem
 
 import (
 	"bytes"
-	"github.com/xojoc/turtle"
 	"image/color"
 	"log"
 	"strconv"
 	"strings"
+
+	"github.com/xojoc/turtle"
 )
 
 // LSystem keeps track of the state of the L-system.
